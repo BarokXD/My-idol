@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JVKE - Golden Hour</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:sans-serif;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, 
+                #ff9a3c 0%, 
+                #ff7b54 40%, 
+                #ff5e62 70%, 
+                #ff9966 100%);
+        }
 
+    
+        .sun {
+            position: absolute;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #fff3b0 0%, #ffb347 60%, rgba(255,179,71,0.2) 100%);
+            border-radius: 50%;
+            filter: blur(3px);
+            box-shadow: 0 0 80px rgba(255,200,120,0.9);
+            animation: glow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 60px rgba(255,200,120,0.7); }
+            to { box-shadow: 0 0 120px rgba(255,220,150,1); }
+        }
+
+        .container {
+            padding: 60px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: serif;
+            font-size: 60px;
+            margin-bottom: 5px;
+            transition: 0.4s;
+            text-shadow: 0 0 20px rgba(255,255,255,0.8);
+        }
+
+        h1:hover {
+            color: #fff8dc;
+            text-shadow: 0 0 40px #fff8dc, 0 0 80px #ffcc66;
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-weight: normal;
+            margin-top: 0;
+            opacity: 0.9;
+        }
+
+        .profile-img {
+            width: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+            box-shadow: 0 0 30px rgba(255,255,255,0.8);
+            transition: 0.5s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 60px rgba(255,255,255,1);
+        }
+
+        .card {
+            background: rgba(0,0,0,0.35);
+            padding: 25px;
+            margin: 25px auto;
+            max-width: 650px;
+            border-radius: 30px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background: white;
+            color: #ff5e62;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background: #ffe0cc;
+            transform: scale(1.1);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+<div class="sun"></div>
+
+
+<div class="container">
+    <h1>JVKE</h1>
+    <h2>The Golden Hour Artist</h2>
+
+    <img class="profile-img" 
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvlfoKwAwBOmbzBsCVQiCxy2ZNZY57mLxitP-Z7ValbZnjrhkX3_n1uHM&s=10" 
+    alt="JVKE">
+
+    <div class="card">
+        <h3>Profil</h3>
+        <p><b>Nama Lengkap:</b> Jacob Dodge Lawson</p>
+        <p><b>Tanggal Lahir:</b> 3 Maret 2001</p>
+        <p><b>Umur:</b> 25 tahun (2026)</p>
+        <p>Penyanyi dan produser asal Amerika Serikat yang dikenal dengan lagu emosional dan permainan piano yang bagus.</p>
+    </div>
+
+    <div class="card">
+        <h3>Momen Awal Terkenal</h3>
+        <p>Mulai viral di TikTok tahun 2020 lewat lagu "Upside Down". 
+        Popularitas globalnya melonjak lewat lagu <b>Golden Hour (2022)</b> yang masuk ke fyp internasional (termasuk gweh).</p>
+    </div>
+
+    <div class="card">
+        <h3>Golden Hour</h3>
+        <p>Lagu enak my paporit gweh.</p>
+
+        <a href="https://www.youtube.com/results?search_query=JVKE+Golden+Hour" target="_blank">
+            🎥 YouTube
+        </a>
+
+        <a href="https://open.spotify.com/search/jvke%20golden%20hour" target="_blank">
+            🎧 Spotify
+        </a>
+    </div>
+
+    <footer>
+        Made by baok malas coding
+    </footer>
+</div>
+
+</body>
+</html>
